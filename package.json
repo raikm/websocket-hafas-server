@@ -4,14 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "hafas-client": "^5.15.1",
-    "hafas-client-rpc": "^4.3.0",
-    "ws": "^7.4.4"
+    "hafas-client": "^5.16.0",
+    "https": "^1.0.0",
+    "ws": "^7.5.1"
   }
 }
