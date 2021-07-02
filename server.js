@@ -1,3 +1,5 @@
+//const { showNearbyStations } = require("./setup.js");
+
 const express = require("express");
 const http = require("http");
 const WebSocket = require("ws");
@@ -12,20 +14,10 @@ const server = http.createServer(express);
 const wss = new WebSocket.Server({ server });
 
 wss.on("connection", function connection(ws) {
-  client
-    .nearby(
-      {
-        type: "location",
-        latitude: 52.535516,
-        longitude: 13.406638,
-      },
-      { distance: 1000 }
-    )
-    .then(console.log);
-  ws.on("message", function incoming(data) {
-    console.log("message: " + data);
+  ws.on("showNearbyStations", function incoming(data) {
+    console.log(data);
+    //TODO: showNearbyStations()
   });
-  ws.send("something");
 });
 
 const interval = setInterval(function ping() {
@@ -42,6 +34,3 @@ wss.on("close", function close() {
 server.listen(port, function () {
   console.log(`Server is listening on ${port}!`);
 });
-
-// const server = exposeHafasClient(httpServer, hafas);
-// console.log("hafas-websocket-server running");
