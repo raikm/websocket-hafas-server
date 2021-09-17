@@ -61,16 +61,12 @@ module.exports = {
 
   getFavoritesFromDb: function getFavoritesFromDb() {
     const stationWithLines = db.get("stationWithLines");
-    //const r = data.filter(d => d.courses.every(c => courses.includes(c.id)));
-
-    // const stationWithLinesFiltered = stationWithLines.filter((station) => {
-    //   station.lines.every((line) => line.active === false);
-    // });
+    // Active === true means it is a favorite marked line
     const stationWithLinesFiltered = stationWithLines.map((station) => {
       station.lines = station.lines.filter((line) => line.active === true);
       return station;
     });
-    //results.map(result=>{result.courses = result.courses.filter(course=>(filter.includes(course.id)))return result})
+    // Remove empty stations where no favorite lines are saved
     return stationWithLinesFiltered.filter(
       (station) => station.lines.length != 0
     );

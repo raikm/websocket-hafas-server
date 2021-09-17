@@ -53,7 +53,7 @@
           "metro": false,
           "express": false,
           "night": false,
-          "active": true
+          "active": false
         },
         {
           "type": "line",
@@ -140,7 +140,7 @@
           "metro": true,
           "express": false,
           "night": false,
-          "active": false
+          "active": true
         },
         {
           "type": "line",
@@ -155,7 +155,7 @@
           "metro": true,
           "express": false,
           "night": false,
-          "active": false
+          "active": true
         }
       ]
     },
@@ -236,42 +236,6 @@
           "metro": false,
           "express": false,
           "night": true,
-          "active": false
-        }
-      ]
-    },
-    {
-      "name": "Friedrich-Ludw.-Jahn-Sportpark",
-      "id": "900000110718",
-      "lines": [
-        {
-          "type": "line",
-          "id": "m10",
-          "fahrtNr": null,
-          "name": "M10",
-          "public": true,
-          "mode": "train",
-          "product": "tram",
-          "symbol": "M",
-          "nr": 10,
-          "metro": true,
-          "express": false,
-          "night": false,
-          "active": false
-        },
-        {
-          "type": "line",
-          "id": "m10",
-          "fahrtNr": null,
-          "name": "M10",
-          "public": true,
-          "mode": "bus",
-          "product": "bus",
-          "symbol": "M",
-          "nr": 10,
-          "metro": true,
-          "express": false,
-          "night": false,
           "active": false
         }
       ]

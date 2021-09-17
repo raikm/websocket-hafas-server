@@ -7,11 +7,8 @@ const {
   saveFavorites,
   getFavoritesFromDb,
 } = require("./setup");
-const { getDepartures } = require("./hafas");
-const createClient = require("hafas-client");
-const bvgProfile = require("hafas-client/p/bvg");
 
-// const client = createClient(bvgProfile, "hafas");
+const { getDepartures } = require("./hafas");
 
 // Create Server
 const port = 4000;
@@ -22,7 +19,7 @@ const wss = new WebSocket.Server({ server });
 wss.on("connection", (ws) => {
   ws.on("message", async (data) => {
     const message = JSON.parse(data);
-
+    // Used by Client in Settings
     if (message.methode === "requestStations") {
       try {
         const homeCoordinates = message.homeCoordinates;
@@ -34,7 +31,6 @@ wss.on("connection", (ws) => {
         ws.send(JSON.stringify(result));
       } catch (error) {
         console.error("Client didn't send proper home coordinates!");
-        // console.log(homeCoordinates);
       }
     } else if (message.methode === "saveSelection") {
       try {
@@ -46,13 +42,13 @@ wss.on("connection", (ws) => {
 
 const favoriteLines = getFavoritesFromDb();
 
+// Send every 5 seconds the latest updates to the clients
 const interval = setInterval(async () => {
-  console.log("send");
   let departures = await getDepartures(favoriteLines);
   wss.clients.forEach(function each(ws) {
     ws.send(JSON.stringify(departures));
   });
-}, 4000);
+}, 5000);
 
 wss.on("close", function close() {
   console.log("Client disconnected");
