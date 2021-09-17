@@ -1,0 +1,397 @@
+{
+  "stationWithLines": [
+    {
+      "name": "Zionskirchplatz",
+      "id": "900000100042",
+      "lines": [
+        {
+          "type": "line",
+          "id": "12",
+          "fahrtNr": null,
+          "name": "12",
+          "public": true,
+          "mode": "train",
+          "product": "tram",
+          "symbol": null,
+          "nr": 12,
+          "metro": false,
+          "express": false,
+          "night": false,
+          "active": true
+        },
+        {
+          "type": "line",
+          "id": "m1",
+          "fahrtNr": null,
+          "name": "M1",
+          "public": true,
+          "mode": "train",
+          "product": "tram",
+          "symbol": "M",
+          "nr": 1,
+          "metro": true,
+          "express": false,
+          "night": false,
+          "active": true
+        }
+      ]
+    },
+    {
+      "name": "Schwedter Str.",
+      "id": "900000110505",
+      "lines": [
+        {
+          "type": "line",
+          "id": "12",
+          "fahrtNr": null,
+          "name": "12",
+          "public": true,
+          "mode": "train",
+          "product": "tram",
+          "symbol": null,
+          "nr": 12,
+          "metro": false,
+          "express": false,
+          "night": false,
+          "active": true
+        },
+        {
+          "type": "line",
+          "id": "m1",
+          "fahrtNr": null,
+          "name": "M1",
+          "public": true,
+          "mode": "train",
+          "product": "tram",
+          "symbol": "M",
+          "nr": 1,
+          "metro": true,
+          "express": false,
+          "night": false,
+          "active": false
+        }
+      ]
+    },
+    {
+      "name": "Wolliner Str.",
+      "id": "900000007105",
+      "lines": [
+        {
+          "type": "line",
+          "id": "m10",
+          "fahrtNr": null,
+          "name": "M10",
+          "public": true,
+          "mode": "train",
+          "product": "tram",
+          "symbol": "M",
+          "nr": 10,
+          "metro": true,
+          "express": false,
+          "night": false,
+          "active": false
+        },
+        {
+          "type": "line",
+          "id": "247",
+          "fahrtNr": null,
+          "name": "247",
+          "public": true,
+          "mode": "bus",
+          "product": "bus",
+          "symbol": null,
+          "nr": 247,
+          "metro": false,
+          "express": false,
+          "night": false,
+          "active": false
+        },
+        {
+          "type": "line",
+          "id": "m10",
+          "fahrtNr": null,
+          "name": "M10",
+          "public": true,
+          "mode": "bus",
+          "product": "bus",
+          "symbol": "M",
+          "nr": 10,
+          "metro": true,
+          "express": false,
+          "night": false,
+          "active": false
+        }
+      ]
+    },
+    {
+      "name": "Friedrich-Ludwig-Jahn-Sportpark",
+      "id": "900000110018",
+      "lines": [
+        {
+          "type": "line",
+          "id": "m10",
+          "fahrtNr": null,
+          "name": "M10",
+          "public": true,
+          "mode": "train",
+          "product": "tram",
+          "symbol": "M",
+          "nr": 10,
+          "metro": true,
+          "express": false,
+          "night": false,
+          "active": false
+        },
+        {
+          "type": "line",
+          "id": "m10",
+          "fahrtNr": null,
+          "name": "M10",
+          "public": true,
+          "mode": "bus",
+          "product": "bus",
+          "symbol": "M",
+          "nr": 10,
+          "metro": true,
+          "express": false,
+          "night": false,
+          "active": false
+        }
+      ]
+    },
+    {
+      "name": "Brunnenstr./Invalidenstr.",
+      "id": "900000100041",
+      "lines": [
+        {
+          "type": "line",
+          "id": "12",
+          "fahrtNr": null,
+          "name": "12",
+          "public": true,
+          "mode": "train",
+          "product": "tram",
+          "symbol": null,
+          "nr": 12,
+          "metro": false,
+          "express": false,
+          "night": false,
+          "active": false
+        },
+        {
+          "type": "line",
+          "id": "m8",
+          "fahrtNr": null,
+          "name": "M8",
+          "public": true,
+          "mode": "train",
+          "product": "tram",
+          "symbol": "M",
+          "nr": 8,
+          "metro": true,
+          "express": false,
+          "night": false,
+          "active": false
+        },
+        {
+          "type": "line",
+          "id": "m8",
+          "fahrtNr": null,
+          "name": "M8",
+          "public": true,
+          "mode": "bus",
+          "product": "bus",
+          "symbol": "M",
+          "nr": 8,
+          "metro": true,
+          "express": false,
+          "night": false,
+          "active": false
+        },
+        {
+          "type": "line",
+          "id": "n8",
+          "fahrtNr": null,
+          "name": "N8",
+          "public": true,
+          "mode": "bus",
+          "product": "bus",
+          "symbol": "N",
+          "nr": 8,
+          "metro": false,
+          "express": false,
+          "night": true,
+          "active": false
+        },
+        {
+          "type": "line",
+          "id": "n40",
+          "fahrtNr": null,
+          "name": "N40",
+          "public": true,
+          "mode": "bus",
+          "product": "bus",
+          "symbol": "N",
+          "nr": 40,
+          "metro": false,
+          "express": false,
+          "night": true,
+          "active": false
+        }
+      ]
+    },
+    {
+      "name": "Friedrich-Ludw.-Jahn-Sportpark",
+      "id": "900000110718",
+      "lines": [
+        {
+          "type": "line",
+          "id": "m10",
+          "fahrtNr": null,
+          "name": "M10",
+          "public": true,
+          "mode": "train",
+          "product": "tram",
+          "symbol": "M",
+          "nr": 10,
+          "metro": true,
+          "express": false,
+          "night": false,
+          "active": false
+        },
+        {
+          "type": "line",
+          "id": "m10",
+          "fahrtNr": null,
+          "name": "M10",
+          "public": true,
+          "mode": "bus",
+          "product": "bus",
+          "symbol": "M",
+          "nr": 10,
+          "metro": true,
+          "express": false,
+          "night": false,
+          "active": false
+        }
+      ]
+    },
+    {
+      "name": "U Bernauer Str./Schönholzer Str.",
+      "id": "900000007170",
+      "lines": [
+        {
+          "type": "line",
+          "id": "247",
+          "fahrtNr": null,
+          "name": "247",
+          "public": true,
+          "mode": "bus",
+          "product": "bus",
+          "symbol": null,
+          "nr": 247,
+          "metro": false,
+          "express": false,
+          "night": false,
+          "active": false
+        }
+      ]
+    },
+    {
+      "name": "U Eberswalder Str.",
+      "id": "900000110006",
+      "lines": [
+        {
+          "type": "line",
+          "id": "u2",
+          "fahrtNr": null,
+          "name": "U2",
+          "public": true,
+          "mode": "train",
+          "product": "subway",
+          "symbol": "U",
+          "nr": 2,
+          "metro": false,
+          "express": false,
+          "night": false,
+          "active": false
+        },
+        {
+          "type": "line",
+          "id": "12",
+          "fahrtNr": null,
+          "name": "12",
+          "public": true,
+          "mode": "train",
+          "product": "tram",
+          "symbol": null,
+          "nr": 12,
+          "metro": false,
+          "express": false,
+          "night": false,
+          "active": false
+        },
+        {
+          "type": "line",
+          "id": "m1",
+          "fahrtNr": null,
+          "name": "M1",
+          "public": true,
+          "mode": "train",
+          "product": "tram",
+          "symbol": "M",
+          "nr": 1,
+          "metro": true,
+          "express": false,
+          "night": false,
+          "active": false
+        },
+        {
+          "type": "line",
+          "id": "m10",
+          "fahrtNr": null,
+          "name": "M10",
+          "public": true,
+          "mode": "train",
+          "product": "tram",
+          "symbol": "M",
+          "nr": 10,
+          "metro": true,
+          "express": false,
+          "night": false,
+          "active": false
+        },
+        {
+          "type": "line",
+          "id": "m10",
+          "fahrtNr": null,
+          "name": "M10",
+          "public": true,
+          "mode": "bus",
+          "product": "bus",
+          "symbol": "M",
+          "nr": 10,
+          "metro": true,
+          "express": false,
+          "night": false,
+          "active": false
+        },
+        {
+          "type": "line",
+          "id": "n2",
+          "fahrtNr": null,
+          "name": "N2",
+          "public": true,
+          "mode": "bus",
+          "product": "bus",
+          "symbol": "N",
+          "nr": 2,
+          "metro": false,
+          "express": false,
+          "night": true,
+          "active": false
+        }
+      ]
+    }
+  ]
+}

@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server.js"
   },
-  "author": "",
+  "author": "Raik Mueller",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
