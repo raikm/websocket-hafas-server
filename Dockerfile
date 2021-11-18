@@ -9,6 +9,6 @@ RUN npm install
 
 COPY . .
 
-EXPOSE 3000
+EXPOSE 4000
 
-CMD [ "node", "index.js" ]
+CMD [ "ts-node", "./src/index.ts" ]
