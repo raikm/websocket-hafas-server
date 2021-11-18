@@ -2,9 +2,10 @@
   "name": "websocket-hafas-server",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "start": "ts-node ./src/index.ts"
+    "start": "ts-node ./src/index.ts",
+    "build": "tsc"
   },
   "author": "Raik Mueller",
   "license": "ISC",
