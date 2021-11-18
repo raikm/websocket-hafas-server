@@ -20,11 +20,13 @@ export async function getDepartures(_favoriteLines: Stop[]) {
       departuresFromStation = departuresFromStation.filter(
         (departure: Alternative) => {
           const depatureTime = new Date(departure.plannedWhen!);
-          // The Depature has to be > 4 minutes
-          // BUG -> doesnt work
+          const timedifference =
+            ((depatureTime.getTime() - new Date().getTime()) / (1000 * 60)) %
+            60;
           if (
             departure.line?.id === lineId &&
-            (depatureTime.getTime() - new Date().getTime()) / 1000 > 4
+            timedifference > 3 &&
+            timedifference < 15
           ) {
             return true;
           }
