@@ -1,19 +1,17 @@
-FROM node:14
+FROM node:14 as base
 
-WORKDIR /app
+WORKDIR /home/node/app
 
 COPY package*.json ./
 
-RUN npm install
-
-RUN npm build
-
+RUN npm i
 
 COPY . .
 
-EXPOSE 4000
+FROM base as production
 
+ENV NODE_PATH=./build
 
-CMD [ "node", "." ]
+RUN npm run build
 
-
+# sudo docker build -t pi/hafas-websocket-server .
